@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ishiiryoutoku <ishiiryoutoku@student.42    +#+  +:+       +#+        */
+/*   By: ryishii <ryishii@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/21 15:59:29 by ryishii           #+#    #+#             */
-/*   Updated: 2021/03/24 03:26:06 by ishiiryouto      ###   ########.fr       */
+/*   Created: 2021/03/24 03:35:30 by ryishii           #+#    #+#             */
+/*   Updated: 2021/03/24 03:39:25 by ryishii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ int		safe_free(char **p, int res)
 
 int		put_line(char **line, char **save, char *buf)
 {
-	char    *tmp;
-	size_t  len;
+	char	*tmp;
+	size_t	len;
 
 	len = ft_strchr(buf, '\n');
 	tmp = *line;
@@ -44,10 +44,10 @@ int		put_line(char **line, char **save, char *buf)
 
 int		get_next_line(int fd, char **line)
 {
-	static char *save;
-	char        *buf;
-	int         res;
-	ssize_t     n;
+	static char	*save;
+	char		*buf;
+	int			res;
+	ssize_t		n;
 
 	n = 0;
 	if (!line || fd < 0 || BUFFER_SIZE <= 0)

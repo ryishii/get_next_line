@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ishiiryoutoku <ishiiryoutoku@student.42    +#+  +:+       +#+        */
+/*   By: ryishii <ryishii@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/25 06:25:46 by ryishii           #+#    #+#             */
-/*   Updated: 2021/03/24 03:26:37 by ishiiryouto      ###   ########.fr       */
+/*   Created: 2021/03/24 03:35:37 by ryishii           #+#    #+#             */
+/*   Updated: 2021/03/24 03:39:00 by ryishii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

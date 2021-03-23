@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ishiiryoutoku <ishiiryoutoku@student.42    +#+  +:+       +#+        */
+/*   By: ryishii <ryishii@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/25 06:25:17 by ryishii           #+#    #+#             */
-/*   Updated: 2021/03/24 03:25:43 by ishiiryouto      ###   ########.fr       */
+/*   Created: 2021/03/24 03:35:18 by ryishii           #+#    #+#             */
+/*   Updated: 2021/03/24 03:38:40 by ryishii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *str)
 {
-	size_t  i;
+	size_t	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -38,10 +38,10 @@ size_t	ft_strchr(const char *s, int c)
 
 char	*ft_strjoin(const char *s1, const char *s2, size_t n)
 {
-	size_t  len;
-	char    *res;
-	size_t  i;
-	size_t  j;
+	size_t	len;
+	char	*res;
+	size_t	i;
+	size_t	j;
 
 	if (s1 == NULL && s2 == NULL)
 		return (NULL);
@@ -65,9 +65,9 @@ char	*ft_strjoin(const char *s1, const char *s2, size_t n)
 
 char	*ft_strdup(const char *s)
 {
-	size_t  i;
-	size_t  len;
-	char    *res;
+	size_t	i;
+	size_t	len;
+	char	*res;
 
 	len = ft_strlen(s);
 	i = 0;
@@ -75,7 +75,7 @@ char	*ft_strdup(const char *s)
 		return (NULL);
 	while (s[i] != '\0')
 	{
-		res[i] = s[i]; 
+		res[i] = s[i];
 		i++;
 	}
 	res[i] = '\0';
