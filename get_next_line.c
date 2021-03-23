@@ -6,7 +6,7 @@
 /*   By: ryishii <ryishii@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/21 15:59:29 by ryishii           #+#    #+#             */
-/*   Updated: 2021/02/03 10:12:09 by ryishii          ###   ########.fr       */
+/*   Updated: 2021/02/06 02:36:16 by ryishii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ int     get_next_line(int fd, char **line)
     while (res == 0 && (n = read(fd, buf, BUFFER_SIZE)) > 0)
     {
         buf[n] = '\0';
-        if (n == 0 || (res = put_line(line, &save, buf) == -1))
+        if (n == 0 || (res = put_line(line, &save, buf)) == -1)
             break ;
     }
     if (n == -1)
